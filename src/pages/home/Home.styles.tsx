@@ -12,8 +12,8 @@ export const HomeBackground = styled.div`
 `;
 
 export const InnerHomeBackground = styled.div`
-  width: 80%;
-  height: 1000px;
+  width: 85%;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 16px;

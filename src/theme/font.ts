@@ -1,7 +1,7 @@
 export const fonts = {
   fontFamily: {
     rubik: "Rubik",
-    lobster: "Lobster Two",
+    DMsans: "DM sans",
     poppins: "Poppins",
     inter: "Inter",
   },
@@ -17,8 +17,8 @@ export const fonts = {
   fontSize: {
     rubik: "73px",
     lobster: "80px",
-    display1: "60px",
-    display2: "45px",
+    display1: "68px",
+    display2: "55px",
     heading1: "38px",
     heading2: "30px",
     heading3: "26px",
