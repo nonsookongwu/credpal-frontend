@@ -8,6 +8,7 @@ interface Props {
   border?: string;
   bgColor?: string;
   color?: string;
+  borderRadius: string;
   onClick?: () => void;
   type?: "reset" | "button" | "submit" | undefined;
 }
@@ -21,6 +22,7 @@ const CustomButton = ({
   bgColor,
   color,
   type,
+  borderRadius
 }: Props) => {
   return (
     <ButtonStyle
@@ -31,6 +33,7 @@ const CustomButton = ({
       $border={border}
       $color={color}
       type={type}
+      $borderRadius={borderRadius}
     >
       {children}
     </ButtonStyle>

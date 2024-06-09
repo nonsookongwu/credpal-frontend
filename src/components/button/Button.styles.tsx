@@ -9,6 +9,7 @@ interface ButtonProps {
   width?: string;
   $border?: string;
   $color?: string;
+  $borderRadius: string;
 }
 
 export const ButtonStyle = styled.button<ButtonProps>`
@@ -21,7 +22,7 @@ export const ButtonStyle = styled.button<ButtonProps>`
       ? props.$color
       : `${color.white.white}`};
   padding: 12px 24px;
-  border-radius: 16px;
+  border-radius: ${(props) => (props.$borderRadius)};
   /* box-shadow: ${(props) =>
     props.disabled ? "none" : ` 0 0 2px 1px rgba(0, 0, 0, 0.3)`}; */
   transform: ${(props) => (props.disabled ? `scale(0.98)` : ` none`)};

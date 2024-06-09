@@ -101,7 +101,8 @@ const NavBar = () => {
              
             ))}
             <MobileButton>
-              <CustomButton
+              <CustomButton 
+                borderRadius="16px"
                 children="Download the credpal app"
                 onClick={handleLogOut}
               />
@@ -131,7 +132,7 @@ const NavBar = () => {
           </MobileIcon>
 
           <DesktopButton>
-            <CustomButton
+            <CustomButton borderRadius="16px"
               color="black"
               children="Download the CredPal App"
               onClick={handleLogOut}
