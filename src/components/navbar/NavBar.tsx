@@ -5,10 +5,14 @@ import { RxHamburgerMenu } from "react-icons/rx";
 // import { EGNLogo } from "../../assets";
 import CustomButton from "../button/CustomButton";
 import {
+  ArrowDown,
   DesktopButton,
+  FlagContainer,
+  FlagImg,
   Logo,
   MobileButton,
   MobileIcon,
+  NavBarLeft,
   NavContainer,
   NavElements,
   NavMenu,
@@ -18,15 +22,15 @@ import {
 import { Link, NavLink, useNavigate } from "react-router-dom";
 // import useStorage from "../../hooks/useStorage";
 import { color } from "../../theme/color";
-import { logo } from "../../assets";
+import { flag, logo } from "../../assets";
 
 const NavBar = () => {
   const navigate = useNavigate();
   const navElements = [
-    { label: "Home", href: "/" },
-    { label: "Services", href: "/services" },
-    { label: "Menu", href: "/menu" },
-    { label: "Contact", href: "/contact" },
+    { label: "Products", href: "/" },
+    { label: "Business", href: "/services" },
+    { label: "What we do", href: "/menu" },
+    // { label: "Contact", href: "/contact" },
   ];
 
   const [openMobile, setOpenMobile] = useState(false);
@@ -50,15 +54,12 @@ const NavBar = () => {
   };
 
   return (
-    <IconContext.Provider value={{ color: `${color.primary.bleuDeFrance}` }}>
+    <IconContext.Provider value={{ color: `${color.white.white}` }}>
       <NavContainer>
-        <NavLink to={"/"} onClick={() => handleActive(0)}>
-          <Logo src={logo} />
-        </NavLink>
-        <Navigation>
-          <MobileIcon onClick={handleOpenMobile}>
-            {openMobile ? <LiaTimesSolid /> : <RxHamburgerMenu />}
-          </MobileIcon>
+        <NavBarLeft>
+          <NavLink to={"/"} onClick={() => handleActive(0)}>
+            <Logo src={logo} />
+          </NavLink>
           <NavMenu $mobileopen={openMobile} onClick={handleOpenMobile}>
             {/* <NavLinks to={"/"}>
               <NavElements
@@ -88,14 +89,16 @@ const NavBar = () => {
             </NavElements> */}
 
             {navElements.map((navElement, index) => (
-              <NavLink to={`${navElement.href}`} key={navElement.label}>
+              
                 <NavElements
+                  to={`${navElement.href}`}
+                  key={navElement.label}
                   $activeclass={active === index}
                   onClick={() => handleActive(index)}
                 >
                   {navElement.label}
                 </NavElements>
-              </NavLink>
+             
             ))}
             <MobileButton>
               <CustomButton
@@ -108,9 +111,29 @@ const NavBar = () => {
                 </Link> */}
             </MobileButton>
           </NavMenu>
+        </NavBarLeft>
+        <Navigation>
+          <NavElements
+            to={""}
+            $activeclass={active === 4}
+            onClick={() => handleActive(4)}
+          >
+            FAQ
+          </NavElements>
+
+          <FlagContainer>
+            <FlagImg src={flag} />
+            <ArrowDown/>
+          </FlagContainer>
+
+          <MobileIcon onClick={handleOpenMobile}>
+            {openMobile ? <LiaTimesSolid /> : <RxHamburgerMenu />}
+          </MobileIcon>
+
           <DesktopButton>
             <CustomButton
-              children="Download the credpal app"
+              color="black"
+              children="Download the CredPal App"
               onClick={handleLogOut}
             />
 

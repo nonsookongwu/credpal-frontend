@@ -6,8 +6,18 @@ export const HomeBackground = styled.div`
   width: 100%;
   height: auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${color.primary.brandeisBlue};
+`;
+
+export const InnerHomeBackground = styled.div`
+  width: 80%;
+  height: 1000px;
+  display: flex;
   flex-direction: column;
   gap: 16px;
+  border: 2px solid red;
 `;
 
 export const HeroBackground = styled.div`

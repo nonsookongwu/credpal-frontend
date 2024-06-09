@@ -1,19 +1,35 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { color } from "../../theme/color";
 import { fonts } from "../../theme/font";
+import { IoIosArrowDown } from "react-icons/io";
 
 
 export const NavContainer = styled.nav`
   /* background-color: ${color.primary.brandeisBlue}; */
-  /* border: 2px solid red; */
+  border: 2px solid red;
   width: 100%;
-  height: 78px;
+  height: 125px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* padding: 0 32px 0 32px; */
+  box-sizing: border-box;
   @media screen and (max-width: 960px) {
     justify-content: space-between;
+  }
+`;
+
+export const NavBarLeft = styled.div`
+  border: 2px solid orange;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 960px) {
+    justify-content: center;
+    gap: 20px;
   }
 `;
 
@@ -22,9 +38,9 @@ export const Logo = styled.img`
 `;
 
 export const Navigation = styled.div`
-  /* border: 2px solid blue; */
-  width: 560px;
-  height: 46px;
+  border: 2px solid yellow;
+  width: 35%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,11 +55,11 @@ interface NavMenuProps {
 }
 
 export const NavMenu = styled.ul<NavMenuProps>`
-  /* border: 2px solid red; */
-  width: 371px;
-  height: 23px;
+  border: 2px solid red;
+  width: 70%;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   list-style: none;
   text-decoration: none;
@@ -81,7 +97,7 @@ interface NavElementProps {
   $activeclass: boolean;
 }
 
-export const NavElements = styled.li<NavElementProps>`
+export const NavElements = styled(Link)<NavElementProps>`
   font-family: ${fonts.fontFamily.poppins};
   font-size: ${fonts.fontSize.body2};
   font-weight: ${(props) =>
@@ -93,8 +109,8 @@ export const NavElements = styled.li<NavElementProps>`
   cursor: pointer;
   color: ${(props) =>
     props.$activeclass
-      ? `${color.primary.bleuDeFrance}`
-      : `${color.black.darkCharcoal}`};
+      ? `${color.white.chineseWhite}`
+      : `${color.white.white}`};
   text-decoration: none !important;
 
   &:hover {
@@ -150,4 +166,25 @@ export const MobileIcon = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
   }
+`;
+
+
+export const FlagContainer = styled.div`
+  width: 15%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 2px solid red; */
+  color: ${color.white.white};
+`;
+
+export const FlagImg = styled.img`
+  width: 40px;
+  height: 40px;
+`;
+
+export const ArrowDown = styled(IoIosArrowDown)`
+  font-size: ${fonts.fontSize.heading3};
+  color: ${color.white.white};
 `;

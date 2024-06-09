@@ -30,7 +30,7 @@ export const ButtonStyle = styled.button<ButtonProps>`
   font-weight: 400;
   display: inline-block;
   border: ${(props) => (props.$border ? `${props.$border}` : ` none`)};
-  font-family: ${fonts.fontFamily.rubik};
+  /* font-family: ${fonts.fontFamily.rubik}; */
   font-weight: ${fonts.fontWeight.medium};
   font-size: ${fonts.fontSize.body1};
   letter-spacing: ${fonts.letterSpacing.body};
