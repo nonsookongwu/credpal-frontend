@@ -7,7 +7,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 export const NavContainer = styled.nav`
   /* background-color: ${color.primary.brandeisBlue}; */
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 100%;
   height: 125px;
   display: flex;
@@ -21,7 +21,7 @@ export const NavContainer = styled.nav`
 `;
 
 export const NavBarLeft = styled.div`
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   width: 45%;
   height: 100%;
   display: flex;
@@ -38,7 +38,7 @@ export const Logo = styled.img`
 `;
 
 export const Navigation = styled.div`
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   width: 35%;
   height: 100%;
   display: flex;
@@ -55,7 +55,7 @@ interface NavMenuProps {
 }
 
 export const NavMenu = styled.ul<NavMenuProps>`
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 70%;
   height: 100%;
   display: flex;

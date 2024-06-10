@@ -18,7 +18,7 @@ export const InnerHomeBackground = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 `;
 
 export const InnerHomeBackgroundWhite = styled.div`
@@ -28,10 +28,10 @@ export const InnerHomeBackgroundWhite = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 24px 0;
+  padding: 24px 0 32px 0;
   /* gap: 16px; */
   background-color: ${color.white.white};
-  border: 2px solid red;
+  /* border: 2px solid red; */
 `;
 
 export const HeroBackground = styled.div`

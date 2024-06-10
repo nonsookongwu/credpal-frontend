@@ -13,6 +13,10 @@ import pay from "./pay.png";
 import payButton from "./paybutton.png";
 import shopButton from "./shopbutton.png";
 import travelButton from "./travelbutton.png";
+import actionImage from "./actionImage.png";
+import android from "./androidDownload.png";
+import apple from "./applestore.png";
+import footerLogo from "./footerLogo.png";
 
 export {
   logo,
@@ -30,4 +34,8 @@ export {
   payButton,
   shopButton,
   travelButton,
+  actionImage,
+  android,
+  apple,
+  footerLogo,
 };
