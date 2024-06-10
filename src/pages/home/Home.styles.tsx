@@ -28,7 +28,8 @@ export const InnerHomeBackgroundWhite = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  padding: 24px 0;
+  /* gap: 16px; */
   background-color: ${color.white.white};
   border: 2px solid red;
 `;

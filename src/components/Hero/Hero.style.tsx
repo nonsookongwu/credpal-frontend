@@ -6,7 +6,7 @@ import { hero_img } from "../../assets";
 
 
 export const HeroContainer = styled.div`
-  border: 2px solid blueviolet;
+  /* border: 2px solid blueviolet; */
   width: 100%;
   height: 500px;
   /* height: 100vh; */
@@ -42,7 +42,7 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroLeftContainer = styled.div`
-  border: 2px solid pink;
+  /* border: 2px solid pink; */
   width: 50%;
   /* width: auto; */
   height: 100%;
@@ -76,7 +76,7 @@ export const HeroLeftContainer = styled.div`
 `;
 
 export const HeroRightContainer = styled.div`
-  border: 2px solid paleturquoise;
+  /* border: 2px solid paleturquoise; */
   /* width: 693px; */
   width: 40%;
   height: 876px;
@@ -116,7 +116,7 @@ width: auto;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   gap: 10px;
 `;
 
@@ -224,7 +224,7 @@ export const SubtitleText = styled.div`
   color: ${color.white.white};
   width: 100%;
   height: auto;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 
   @media screen and (max-width: 1440px) {
     /* width: 470px;

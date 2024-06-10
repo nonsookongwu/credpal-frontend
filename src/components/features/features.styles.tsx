@@ -10,18 +10,18 @@ export const FeaturesBackground = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border: 2px solid rebeccapurple;
-  padding: 48px 0;
+  /* border: 2px solid rebeccapurple; */
+  padding: 48px 0 0 0;
   gap: 30px;
 `;
 
 export const FeatureContainer = styled.div`
-  width: 90%;
+  width: 80%;
   height: 450px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid rebeccapurple;
+  /* border: 2px solid rebeccapurple; */
 `;
 
 
@@ -33,7 +33,7 @@ export const FeatureLeft = styled.div`
   justify-content: flex-start;
   align-items: center;
   gap: 24px;
-  border: 2px solid rebeccapurple;
+  /* border: 2px solid rebeccapurple; */
 `;
 
 interface FeatureRightProps{
@@ -51,7 +51,7 @@ export const FeatureRight = styled.div<FeatureRightProps>`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  border: 2px solid rebeccapurple;
+  /* border: 2px solid rebeccapurple; */
 `;
 
 export const FeatureTitle = styled.div`
@@ -143,5 +143,5 @@ export const ButtonContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border: 2px solid rebeccapurple;
+  /* border: 2px solid rebeccapurple; */
 `;

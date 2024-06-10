@@ -3,6 +3,7 @@ import { HeroBackground, HomeBackground, InnerHomeBackground, InnerHomeBackgroun
 import NavBar from '../../components/navbar/NavBar'
 import Hero from '../../components/Hero/Hero';
 import Features from '../../components/features/Features';
+import Marketing from '../../components/marketing/Marketing';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
         </InnerHomeBackground>
         <InnerHomeBackgroundWhite>
           <Features />
+          <Marketing/>
         </InnerHomeBackgroundWhite>
       </HomeBackground>
     );
